@@ -1,0 +1,94 @@
+[
+  {
+    "Role": "Product Owner",
+    "Responsibilities": "Define product vision, create initial business requirements, prioritize features, and ensure the final product meets business goals. Initiate the project and conclude it with a product release announcement.",
+    "Produces": [
+      {
+        "Artifact": "business_requirements.md",
+        "SendTo": "Business Analyst"
+      },
+      {
+        "Artifact": "product_backlog.md",
+        "SendTo": "Scrum Master"
+      },
+      {
+        "Artifact": "product_release_announcement.md",
+        "SendTo": "Customers"
+      }
+    ]
+  },
+  {
+    "Role": "Business Analyst",
+    "Responsibilities": "Translate business requirements into technical requirements, ensure alignment between business needs and technical solutions, and provide feedback on technical feasibility.",
+    "Produces": [
+      {
+        "Artifact": "technical_requirements.md",
+        "SendTo": "Software Architect"
+      },
+      {
+        "Artifact": "feasibility_report.md",
+        "SendTo": "Product Owner"
+      }
+    ]
+  },
+  {
+    "Role": "Software Architect",
+    "Responsibilities": "Design the overall software architecture, create detailed technical specifications, and guide the development process to ensure it aligns with the architecture.",
+    "Produces": [
+      {
+        "Artifact": "software_design.md",
+        "SendTo": "Software Developer"
+      },
+      {
+        "Artifact": "technical_specifications.md",
+        "SendTo": "Software Developer"
+      }
+    ]
+  },
+  {
+    "Role": "Software Developer",
+    "Responsibilities": "Implement the software based on the technical specifications and architecture design, write clean and testable code, and address any issues raised during testing.",
+    "Produces": [
+      {
+        "Artifact": "program.py",
+        "SendTo": "Software Tester"
+      },
+      {
+        "Artifact": "code_documentation.md",
+        "SendTo": "Software Tester"
+      }
+    ]
+  },
+  {
+    "Role": "Software Tester",
+    "Responsibilities": "Create and execute test plans, perform unit and integration testing, report bugs and issues, and verify that the software meets the specified requirements.",
+    "Produces": [
+      {
+        "Artifact": "test_plan.md",
+        "SendTo": "Software Developer"
+      },
+      {
+        "Artifact": "test_results.md",
+        "SendTo": "Scrum Master"
+      },
+      {
+        "Artifact": "bug_report.md",
+        "SendTo": "Software Developer"
+      }
+    ]
+  },
+  {
+    "Role": "Scrum Master",
+    "Responsibilities": "Facilitate the development process, remove obstacles, ensure smooth communication between team members, and track project progress.",
+    "Produces": [
+      {
+        "Artifact": "sprint_backlog.md",
+        "SendTo": "Software Developer"
+      },
+      {
+        "Artifact": "status_report.md",
+        "SendTo": "Product Owner"
+      }
+    ]
+  }
+]
